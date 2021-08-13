@@ -13,8 +13,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
-<meta name="description" content="About the site"/><link rel="alternate" href="/atom.xml" title="HeeH" type="application/atom+xml"><link rel="shortcut icon" type="image/x-icon" href="/f1.png?v=2.11.0" />
-<link rel="canonical" href="https://mancuoj.github.io/post/bf88a430.html"/>
+<meta name="description" content="常用Git指令"/><link rel="alternate" href="/atom.xml" title="HeeH" type="application/atom+xml"><link rel="shortcut icon" type="image/x-icon" href="/f1.png?v=2.11.0" />
+<link rel="canonical" href="https://mancuoj.github.io/post/30d9e683.html"/>
 
 <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" /><script type="text/x-mathjax-config">
     MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
@@ -40,7 +40,7 @@
   window.config = {"leancloud":{"app_id":null,"app_key":null},"toc":true,"fancybox":true,"pjax":"","latex":true};
 </script>
 
-    <title>About the site - HeeH</title>
+    <title>常用Git指令 - HeeH</title>
   <meta name="generator" content="Hexo 5.4.0"></head>
 
   <body><div id="mobile-navbar" class="mobile-navbar">
@@ -77,78 +77,107 @@
         <div class="content-wrapper">
           <div id="content" class="content"><article class="post">
     <header class="post-header">
-      <h1 class="post-title">About the site
+      <h1 class="post-title">常用Git指令
         </h1>
 
       <div class="post-meta">
         <span class="post-time">
-          2020-02-10
+          2020-05-21
         </span></div>
     </header>
 
     <div class="post-toc" id="post-toc">
     <h2 class="post-toc-title">Contents</h2>
     <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">History</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">To be continue …</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">Notes</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">One more thing</span></a></li></ol>
     </div>
-  </div><div class="post-content"><blockquote>
-<blockquote>
-<p>sometimes code, sometimes record life and momentary thoughts 💥</p>
-</blockquote>
-</blockquote>
-<h1>History</h1>
+  </div><div class="post-content"><h1>Notes</h1>
+<p><img src="https://gitee.com/mancuojie/typo/raw/master/bg2015120901.png" alt="img"></p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Time</th>
-<th></th>
+<th style="text-align:left">指令</th>
+<th style="text-align:left">说明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">2020初</td>
-<td>疫情开始, 跟着网上的文字教程一步步弄, 前端看不懂github也搞不明白, 但还是搞成了</td>
+<td style="text-align:left"><code>git init</code></td>
+<td style="text-align:left">初始化本地文件夹为一个git仓库</td>
 </tr>
 <tr>
-<td style="text-align:center"></td>
-<td>断断续续更新了几篇水文, 换了几次主题, 网站换到了gitee, 最后的样子是(<a target="_blank" rel="noopener" href="https://mancuojie.gitee.io/">漫磋嗟</a>)</td>
+<td style="text-align:left"><code>git clone [url]</code></td>
+<td style="text-align:left">copy ~~ 🔥</td>
 </tr>
 <tr>
-<td style="text-align:center">2020.5.4</td>
-<td>更新了最后一篇Java水文, 弃坑 💩</td>
+<td style="text-align:left"><code>git remote add origin [url].git</code></td>
+<td style="text-align:left">关联本地仓库与远端仓库</td>
 </tr>
 <tr>
-<td style="text-align:center"></td>
-<td>🤡🤡🤡 每天浑浑噩噩, 摸鱼度日 🤡🤡🤡</td>
+<td style="text-align:left"><code>git add .</code></td>
+<td style="text-align:left">将修改放入暂存区</td>
 </tr>
 <tr>
-<td style="text-align:center">2021.3</td>
-<td>从3月大三下开学后决定跨考计算机, 开始准备408</td>
+<td style="text-align:left"><code>git status</code></td>
+<td style="text-align:left">查看所有变更的文件</td>
 </tr>
 <tr>
-<td style="text-align:center">2021.8.12</td>
-<td>学着学着408又燃起了写博客记录生活的念头, 于是花了一上午又重新走了一遍流程, 还是熟悉的hexo + github</td>
+<td style="text-align:left"><code>git commit -am &quot;update~&quot;</code></td>
+<td style="text-align:left">提交并添加comment，‘-a’可跳过add步骤</td>
 </tr>
 <tr>
-<td style="text-align:center"></td>
-<td>买了一个域名 heeh.xyz , 因为姓何精挑细选的, 其实是因为<s>没钱买其他我想要的了</s></td>
+<td style="text-align:left"><code>git push -u origin master</code></td>
+<td style="text-align:left">推送到远端库，‘-u’后续不用再写origin master</td>
 </tr>
 <tr>
-<td style="text-align:center">8.13</td>
-<td>为了整几个插件, 重新部署了两次🤮</td>
+<td style="text-align:left">😇😇😇</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git pull</code></td>
+<td style="text-align:left">从远端获取最新版本并merge</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git fetch</code></td>
+<td style="text-align:left">从远端获取最新版本不自动merge</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git branch</code></td>
+<td style="text-align:left">查看本地所有分支</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git reset HEAD [file]</code></td>
+<td style="text-align:left">取消之前的add</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git rm [file]</code></td>
+<td style="text-align:left">删除已跟踪文件</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>git log</code></td>
+<td style="text-align:left">查看提交历史</td>
 </tr>
 </tbody>
 </table>
-<h1>To be continue …</h1>
+<h1>One more thing</h1>
+<blockquote>
+<p>一个用于学习git的小游戏，寓教于乐<br>
+<a target="_blank" rel="noopener" href="https://learngitbranching.js.org/?locale=zh_CN">Learn Git Branching</a></p>
+</blockquote>
 
       </div>
       
       <footer class="post-footer">
         
-        <nav class="post-nav"><a class="prev" href="/post/30d9e683.html">
+        <nav class="post-nav"><a class="prev" href="/post/bdd4fde.html">
         <i class="iconfont icon-left"></i>
-        <span class="prev-text nav-default">常用Git指令</span>
+        <span class="prev-text nav-default">基于Aria2的B站多P下载</span>
         <span class="prev-text nav-mobile">Prev</span>
+      </a>
+    <a class="next" href="/post/bf88a430.html">
+        <span class="next-text nav-default">About the site</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
       </a>
     </nav></footer>
     </article></div><div class="comments" id="comments"></div></div>

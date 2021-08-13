@@ -13,7 +13,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
-<meta name="description" content="Acwing"/><link rel="alternate" href="/atom.xml" title="HeeH" type="application/atom+xml"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.11.0" />
+<meta name="description" content="Acwing"/><link rel="alternate" href="/atom.xml" title="HeeH" type="application/atom+xml"><link rel="shortcut icon" type="image/x-icon" href="/f1.png?v=2.11.0" />
 <link rel="canonical" href="https://mancuoj.github.io/post/47da9cca.html"/>
 
 <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" /><script type="text/x-mathjax-config">
@@ -82,7 +82,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          2021-08-12
+          2021-06-12
         </span></div>
     </header>
 
@@ -147,7 +147,6 @@
 <figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 字符串哈希</span></span><br><span class="line"><span class="comment">// 将字符串看成P进制数, P一般取131或者13331</span></span><br><span class="line"><span class="comment">// 取模的数用2^64, 可以直接用unsigned long long存储, 溢出的结果就是取模的结果</span></span><br><span class="line"><span class="comment">// 存储前缀字符子串的哈希值</span></span><br><span class="line">ULL h[N], p[N];</span><br><span class="line"></span><br><span class="line">p[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">    p[i] = p[i - <span class="number">1</span>]*P;</span><br><span class="line">    h[i] = h[i - <span class="number">1</span>]*P + str[i];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 计算子串str[l ~ r]的哈希值</span></span><br><span class="line"><span class="function">ULL <span class="title">get</span><span class="params">(<span class="keyword">int</span> l, <span class="keyword">int</span> r)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> h[r] - h[l - <span class="number">1</span>]*p[r - l + <span class="number">1</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h1>搜索与图论</h1>
 <h2 id="树与图的存储">树与图的存储</h2>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
 
       </div>
       
@@ -155,11 +154,11 @@
         
         <nav class="post-nav"><a class="prev" href="/post/1691a12d.html">
         <i class="iconfont icon-left"></i>
-        <span class="prev-text nav-default">init hexo</span>
+        <span class="prev-text nav-default">HEXO</span>
         <span class="prev-text nav-mobile">Prev</span>
       </a>
-    <a class="next" href="/post/bf88a430.html">
-        <span class="next-text nav-default">About the site</span>
+    <a class="next" href="/post/bdd4fde.html">
+        <span class="next-text nav-default">基于Aria2的B站多P下载</span>
         <span class="prev-text nav-mobile">Next</span>
         <i class="iconfont icon-right"></i>
       </a>
