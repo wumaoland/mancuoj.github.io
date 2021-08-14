@@ -13,8 +13,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
-<meta name="description" content="基于Aria2的B站多P下载"/><link rel="alternate" href="/atom.xml" title="HeeH" type="application/atom+xml"><link rel="shortcut icon" type="image/x-icon" href="/f1.png?v=2.11.0" />
-<link rel="canonical" href="https://mancuoj.github.io/post/bdd4fde.html"/>
+<meta name="description" content="计算机组成原理指北"/><link rel="alternate" href="/atom.xml" title="HeeH" type="application/atom+xml"><link rel="shortcut icon" type="image/x-icon" href="/f1.png?v=2.11.0" />
+<link rel="canonical" href="https://mancuoj.github.io/post/e8b12e60.html"/>
 
 <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" /><script type="text/x-mathjax-config">
     MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
@@ -40,7 +40,7 @@
   window.config = {"leancloud":{"app_id":null,"app_key":null},"toc":true,"fancybox":true,"pjax":"","latex":true};
 </script>
 
-    <title>基于Aria2的B站多P下载 - HeeH</title>
+    <title>计算机组成原理指北 - HeeH</title>
   <meta name="generator" content="Hexo 5.4.0"></head>
 
   <body><div id="mobile-navbar" class="mobile-navbar">
@@ -77,50 +77,43 @@
         <div class="content-wrapper">
           <div id="content" class="content"><article class="post">
     <header class="post-header">
-      <h1 class="post-title">基于Aria2的B站多P下载
+      <h1 class="post-title">计算机组成原理指北
         </h1>
 
       <div class="post-meta">
         <span class="post-time">
-          2021-06-02
+          2021-08-14
         </span></div>
     </header>
 
     <div class="post-toc" id="post-toc">
     <h2 class="post-toc-title">Contents</h2>
     <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">楔子</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">One more thing</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">楔子</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">初识</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">Todo</span></a></li></ol>
     </div>
   </div><div class="post-content"><h1>楔子</h1>
-<p>上半年开始准备考研时还没买平板，又不想在手机上看视频，所以👴天天像个伞兵一样背着大书包装着我傻大黑粗的游戏本去图书馆。</p>
-<p>又因为图书馆没有WIFI，除了开热点之外就只能把视频下载下来看，一些资源又只有B站有，痛点就出现了。</p>
-<p>以前我做过两个视频都是关于B站视频下载的<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1M4411d71h">点击观看</a>，但都没有涉及到<mark>多P</mark>一起下载，只能一个一个点😓……</p>
-<p>所以又开始找，<s>google</s>了许多方法，比如you-get，还有一些浏览器插件，最后由于速度等各种原因选择了Aria2， 又花了一番功夫把下载速度整到了<mark>每秒10M以上</mark>。</p>
-<h1>Usage</h1>
-<blockquote>
-<p>Aria2 是一个多平台轻量级，支持 HTTP、FTP、BitTorrent 等多协议、多来源的命令行下载工具。</p>
-</blockquote>
-<p>⏬ 首先下载我放在gitee仓库的文件，<a target="_blank" rel="noopener" href="https://gitee.com/mancuojie/file/tree/master/aria2">戳这里下载压缩包</a>。</p>
-<p><img src="https://gitee.com/mancuojie/typo/raw/master/image-20210531232517629.png" alt="image-20210531232517629"></p>
-<p>⏬ 下载完后点开~ 在右下角可以看到一个小图标，由于aria2是一个命令行下载工具，有一定门槛，所以我找到了一个在线的<a target="_blank" rel="noopener" href="http://aria2c.com/">Aria2 Web 控制台</a>。</p>
-<p>⏬ 如果上一步没有打开exe文件，网页会提示错误。</p>
-<p><img src="https://gitee.com/mancuojie/typo/raw/master/image-20210601000337371.png" alt="image-20210601000337371"></p>
-<p>⏬ 还需要一个油猴脚本，<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/bilibili-evolved.offline.user.js">戳这里下载脚本</a>，默认都有浏览器插件TamperMonkey）。</p>
-<p><img src="https://gitee.com/mancuojie/typo/raw/master/image-20210531232211967.png" alt="image-20210531232211967"></p>
-<p>👌👌👌 准备工作完成，开始下载~</p>
-<p>⏬ 打开你想要下载的多P视频，在网页左侧找到脚本的设置，下载视频然后aria2 RPC批量导出。</p>
-<p><img src="https://gitee.com/mancuojie/typo/raw/master/image-20210813193551673.png" alt="image-20210813193551673"></p>
-<p>⏬ 设置一下路径，其他的不要管~ 点击即可开始下载 🔥 🔥 🔥</p>
-<p>⏬ 可以在控制台看到均速达到了10M以上~</p>
-<p><img src="https://gitee.com/mancuojie/typo/raw/master/image-20210813193844326.png" alt="image-20210813193844326"></p>
-<h1>One more thing</h1>
-<blockquote>
-<p>如果下载速度很慢的话</p>
-<blockquote>
-<p>可以在Web控制台设置里把<mark>最多同时任务数</mark>调高, 建议为10 ~</p>
-<p>毕竟这是多线程下载器，并行数量越大下载越快 🔥</p>
-</blockquote>
-</blockquote>
+<p>自从上半年考研决定跨考计算机408以来，计算机组成原理（以下简称计组）应该是我最大的噩梦。</p>
+<p>尤其是定点数浮点数那些数据的运算给了我巨大的心理阴影。如今408一轮过去，即将开始第二轮的总复习，我思来想去觉得输出内容才是最好的复习方式。</p>
+<p>所以决定开一个系列（<s>新坑</s>），也就是你们看到的《计组指北》。</p>
+<p>至于为什么要叫指北？因为指南听起来太过循规蹈矩，我并不希望我的内容是教科书式的，严谨但不生动。我不会从计算机的发展历史，结构概论那些开始写起，我的想法是 <strong>“开局一张图，概念全靠捡”</strong>。</p>
+<p>todo：计算机的基本组成图</p>
+<p>入门只需要大概了解这张图。</p>
+<h1>初识</h1>
+<p>计组看似由许多零碎的毫不相干的内容组成，但实际脉络却很清晰，一切都围绕着01视角的最优解法，很多都与我们日常生活中常见的解决问题的方式息息相关，毕竟<strong>计算机的运行规则是人设计的</strong>。学习的时候时候只要时刻关注几个问题，就是为什么这么做？这样做的优缺点是什么？如何改进？很多复杂的概念就可以轻松记忆。</p>
+<p>举一些很简单的例子：</p>
+<ol>
+<li>
+<p>为什么在CPU和主存之间还要有Cache（高速缓冲寄存器）？<br>
+<strong>答：</strong> 速度矛盾。因为CPU的速度太快，主存跟不上，会造成很大的性能浪费。于是设计了Cache这种造价昂贵但高速的中间物来缓和矛盾。</p>
+</li>
+<li>
+<p>为什么即使Cache中没有CPU想要的东西，CPU也会在读取后把被访问的主存块调入Cache？<br>
+<strong>答：</strong> 这就是生活中的常识了，官方表达就是<strong>局部性原理</strong>：分为时间局部性原理和空间局部性原理。说人话就是你现在访问的地址，不久后可能还想访问（时间），还有附近的地址你等会儿可能也会访问（空间）。</p>
+</li>
+</ol>
+<p>这样的例子在计组里比比皆是，比如Cache小主存大，怎么装？难道是哪是空的装哪？还有Cache装满了怎么办？如果CPU修改了Cache里的内容副本，该如何保持主存母本的数据一致？这些之后都会说到。</p>
+<h1>Todo</h1>
+<p>二进制，定点数浮点数，存储系统，指令系统，CPU，总线，输入输出系统</p>
 
       </div>
       <div class="post-copyright">
@@ -130,7 +123,7 @@
     </p>
     <p class="copyright-item">
       <span>Link: </span>
-      <a href="https://mancuoj.github.io/post/bdd4fde.html">https://mancuoj.github.io/post/bdd4fde.html</a>
+      <a href="https://mancuoj.github.io/post/e8b12e60.html">https://mancuoj.github.io/post/e8b12e60.html</a>
     </p>
     <p class="copyright-item">
       <span>License: </span><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议。 百度和各类采集站皆不可信，搜索请谨慎鉴别。技术类文章一般都有时效性，本人习惯不定期对自己的博文进行修正和更新，因此请访问出处以查看本文的最新版本。</a>
@@ -138,13 +131,8 @@
   </div>
       <footer class="post-footer">
         
-        <nav class="post-nav"><a class="prev" href="/post/47da9cca.html">
-        <i class="iconfont icon-left"></i>
-        <span class="prev-text nav-default">Acwing</span>
-        <span class="prev-text nav-mobile">Prev</span>
-      </a>
-    <a class="next" href="/post/30d9e683.html">
-        <span class="next-text nav-default">常用Git指令</span>
+        <nav class="post-nav"><a class="next" href="/post/1691a12d.html">
+        <span class="next-text nav-default">HEXO</span>
         <span class="prev-text nav-mobile">Next</span>
         <i class="iconfont icon-right"></i>
       </a>
